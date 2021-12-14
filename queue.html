@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CSC 2100: DATA STRUCTURES &mdash;ALGORITHIMS Academics &mdash; Website by Colorlib</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+  <link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <div class="py-2 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-9 d-none d-lg-block">
+            <h3>CSC 2100: DATA STRUCTURES AND ALGORITHIMS </h3>
+          </div>
+          <div class="col-lg-3 text-right">
+             <h3>MAKERERE UNIVERSITY </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="site-logo">
+            <a href="index.html" class="d-block">
+                <h1>DSA <sup>UG</sup></h1>
+            </a>
+          </div>
+          <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="videos.html">Videos</a>
+            <a href="fibo.html">Fibonacci</a>
+            <a href="factorial.html">Factorial</a>
+            <a href="queue.html">Queue</a>
+            <a href="stack.html">Stack</a>
+            <a href="tower-of-hanoi-implementation/index.html">Tower of Hanoi</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+
+
+         
+        </div>
+      </div>
+
+    </header>
+
+    
+    <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('images/vid.jpg')">
+        <div class="container">
+          <div class="row align-items-end">
+            <div class="col-lg-7">
+              <h2 class="mb-0">Queue</h2>
+              <p>Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open at both its ends. One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+    
+
+    <div class="custom-breadcrumns border-bottom">
+      <div class="container">
+        <a href="index.html">Home</a>
+        <span class="mx-3 icon-keyboard_arrow_right"></span>
+        <span class="current">Videos</span>
+      </div>
+    </div>
+
+    <div class="site-section">
+        <div class="container">
+            <div class="mb-3">
+                      
+            
+              <form>
+                   
+
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Input values to the queue.</label>
+                  <input id="puts" type="number" class ="form-control input" placeholder ="enter input" required>
+                  
+                </div>
+
+                <button class="btn btn-primary btn-sm mr-3 mb-3" type = "button" onclick = "enqueue()">enqueue</button>
+                <button class="btn btn-primary btn-sm mr-3 mb-3" type = "button" onclick=" queueSize()">Queue_size</button>
+                <button class="btn btn-danger btn-sm mr-3 mb-3" type = "button" onclick="dequeue()">dequeue</button>
+                <button class="btn btn-warning btn-sm mr-3 mb-3" type = "button" onclick="empty()">Empty</button>
+                
+                
+                <p id = "notify"></p>
+                
+                <div class="form-group">
+                  <label for="exampleFormControlSelect2">Output </label>
+                  <textarea class="form-control output_elements" aria-label="With textarea" id="myselect" ></textarea>
+                </div>
+                
+              </form>
+
+
+        </div>
+            
+
+           
+    </div>
+
+   
+      
+
+     <div class="footer">
+      <div class="container">
+        <div class="row">
+        
+          <div class="col-lg-3">
+            <h3 class="footer-heading"><span>Our Reference Site</span></h3>
+            <ul class="list-unstyled">
+                <li><a href="https://muele.mak.ac.ug/">Muele</a></li>
+               
+            </ul>
+          </div>
+        
+         
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="copyright">
+                <p>
+                   
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | GROUP 13 MAKERERE UNIVERSITY
+                   
+                    </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- .site-wrap -->
+
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#51be78"/></svg></div>
+  <script>
+    
+let output = document.querySelector(".output_elements");
+let notification = document.getElementById('notify');
+
+let queue = {
+     integers : [1]
+}
+let front = -1;
+let rear = -1;
+const queue_size = 6;
+
+
+
+
+Display();
+function enqueue(){
+
+    const tInput = document.querySelector('#puts').value;
+    let Input = document.querySelector('input');
+    if(tInput === ''){
+        output.innerHTML = `no input.`;
+    }
+    else if(rear === queue_size-1){
+    notification.innerHTML = `can't add to an already full queue.`;
+         Input.value = '';
+    } 
+    else if(isEmpty()){
+          front = 0;
+          rear = 0;
+          queue.integers[rear] = tInput;
+          Input.value = '';
+          Display();
+    }
+    else{
+
+        rear++;
+        queue.integers[rear] = tInput;
+         Input.value = '';
+    
+          Display();
+       
+    }
+
+}
+
+
+function dequeue(){
+    if(isEmpty()){
+     notification.innerHTML = `can not dequeue from an empty queue.`;
+    }
+    else if(front === rear){
+        front = -1;
+        rear = -1;
+        Display();
+    }
+    else{
+        front++;
+        Display();
+    }
+
+}
+
+
+
+function Display(){
+    if(isEmpty()){
+        output.innerHTML = ` queue is empty, nothing to display.`;
+    }
+    else
+    {
+    output.innerHTML = ``;
+        for(let i = front; i <= rear; i++ ){
+            output.innerHTML += ` ${queue.integers[i]}  `;
+        }
+    }
+}
+
+
+
+
+function    queueSize(){
+    
+    notification.innerHTML = `size of the queue is ${queue_size}`;
+}
+
+function empty(){
+    if(isEmpty()){
+        notification.innerHTML = `The queue is empty.`;
+    }
+    else{
+        notification.innerHTML = `The queue is not empty.`;
+    }
+    
+ }
+
+ 
+
+
+function isEmpty(){
+    return front === -1 && rear === -1;
+}
+
+
+
+
+ </script>
+ 
+ 
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+
+
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

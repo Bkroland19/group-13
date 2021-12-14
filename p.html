@@ -1,0 +1,59 @@
+
+
+ <div class="site-section">
+    <div class="container">
+
+        
+<div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">Implementation of Fibonacci</h6>
+  </div>
+  <div class="card-body">
+ 
+
+      <div class="mb-3">
+          <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Input limit of fibonacci series needed:</label>
+          <input type="number" class ="form-control inputfib" placeholder ="Input" required>
+        </div>
+
+        <button class="btn btn-info" type = "button" onclick="compute()">compute result:</button>
+        
+        <div class="form-group">
+          <label for="exampleFormControlSelect2">Output:<span class = "limit"></span> </label>
+          <select multiple class="form-control outputfib" id="exampleFormControlSelect2">
+        
+          </select>
+        </div>
+      </form>
+        </div>
+        
+
+
+    </div>
+        
+
+       
+</div>
+
+  
+<script>
+function compute(){
+ let a = 0;
+ let b = 1;
+ let c;
+ let input = document.querySelector(".inputfib");
+ let output = document.querySelector(".outputfib");
+ let limit = document.querySelector(".limit");
+ limit.innerHTML = `The first ${input.value} fibonacci numbers are;`
+ for(let counter = 1; counter <= input.value ; counter++){
+      output.innerHTML += `<option> ${b} </option>`;
+     
+     c = a + b;
+     a = b;
+     b = c;
+
+ }
+}
+
+ </script>
